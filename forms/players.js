@@ -47,15 +47,7 @@ function onCellClick(foundsetindex, columnindex, record, event, columnid) {
 	    'Delete',
 	    'Cancel'
 	  );}
-	  else{
-		  var playerRec = foundset.getSelectedRecord();
-		    if (!playerRec) return;
-
-		    // pass evaluations foundset to the container form
-		    forms.evaluation_table.loadEvaluations(
-		        playerRec.players_to_evaluations
-		   );
-	  }
+	 
 	
 
 	  if (answer == 'Delete') {
