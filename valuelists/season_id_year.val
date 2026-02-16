@@ -1,0 +1,17 @@
+{
+    "addEmptyValue":1,
+    "customProperties":{
+        "lazyLoading":false
+    },
+    "dataProviderID1":"year",
+    "dataProviderID3":"season_uuid",
+    "dataSource":"db:/football/seasons",
+    "displayValueType":8,
+    "name":"season_id_year",
+    "realValueType":12,
+    "returnDataProviders":4,
+    "showDataProviders":1,
+    "typeid":34,
+    "uuid":"7883FFEA-D465-4E13-A73A-44FFD06B2C3D",
+    "valueListType":1
+}

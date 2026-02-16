@@ -1,0 +1,17 @@
+{
+    "allowCreationRelatedRecords":true,
+    "foreignDataSource":"db:/football/seasons",
+    "items":[
+        {
+            "foreignColumnName":"season_uuid",
+            "primaryDataProviderID":"season_id",
+            "typeid":23,
+            "uuid":"A43B5AAE-EC1B-48FD-AB13-AF44A71516C9"
+        }
+    ],
+    "joinType":1,
+    "name":"evaluations_to_seasons",
+    "primaryDataSource":"db:/football/evaluations",
+    "typeid":22,
+    "uuid":"F0464C5E-1E0F-44FB-8539-47C67FCE5E7A"
+}

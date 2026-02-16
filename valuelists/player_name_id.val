@@ -1,0 +1,17 @@
+{
+    "addEmptyValue":1,
+    "customProperties":{
+        "lazyLoading":false
+    },
+    "dataProviderID1":"name",
+    "dataProviderID3":"player_uuid",
+    "dataSource":"db:/football/players",
+    "displayValueType":12,
+    "name":"player_name_id",
+    "realValueType":12,
+    "returnDataProviders":4,
+    "showDataProviders":1,
+    "typeid":34,
+    "uuid":"3749C253-5544-4E03-A847-2776D0252A05",
+    "valueListType":1
+}

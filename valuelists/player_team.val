@@ -1,0 +1,18 @@
+{
+    "addEmptyValue":1,
+    "customProperties":{
+        "lazyLoading":false
+    },
+    "dataProviderID1":"team_name",
+    "dataProviderID2":"team_uuid",
+    "dataProviderID3":"team_uuid",
+    "dataSource":"db:/football/teams",
+    "displayValueType":12,
+    "name":"player_team",
+    "realValueType":12,
+    "returnDataProviders":2,
+    "showDataProviders":1,
+    "typeid":34,
+    "uuid":"A0C3C734-7AE6-4A92-9620-7B29FE20140C",
+    "valueListType":1
+}
