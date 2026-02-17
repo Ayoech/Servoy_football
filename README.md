@@ -86,13 +86,6 @@ Each evaluation links one player to one season.
 - Relational database structure
 - Chart.js integration for data visualization
 
-## Application Screenshots
-
-- Figure 1: Teams rating comparison chart
-- Figure 2: Player evaluation interface
-- Figure 3: Individual player development tracking
-
-(Screenshots can be added in this section.)
 
 ## Future Improvements
 
