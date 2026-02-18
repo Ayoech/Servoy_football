@@ -40,7 +40,7 @@ function onAction(event) {
  */
 function onCellClick(foundsetindex, columnindex, record, event, columnid) {
 	// TODO Auto-generated method stub
-	if(columnid=='id3'){
+	if(columnid=='id4'){
 		var answer = plugins.dialogs.showQuestionDialog(
 	    'Confirm delete',
 	    'Delete selected record?',
@@ -66,105 +66,7 @@ function onCellClick(foundsetindex, columnindex, record, event, columnid) {
  * @properties={typeid:24,uuid:"F1A2B3C4-5D6E-7F80-1234-9ABCDEFFEDCB"}
  * @AllowToRunInFind
  */
-function onSearchChange(oldValue, newValue, event) {
-    // If empty, remove filters and reload all records
-    if (!newValue || newValue.toString().trim() === '') {
-        try {
-            foundset.loadAllRecords();
-        } catch (e) {
-            // ignore
-        }
-        return true;
-    }
 
-    var q = newValue.toString().trim();
-    var wildcard = '%' + q + '%';
-
-    // Determine server and table from datasource (e.g. 'db:/football/evaluations')
-    var ds = foundset.getDataSource();
-    var parts = ds.split('/');
-    var server = parts.length > 1 ? parts[1] : null;
-    var table = parts.length > 2 ? parts[2] : null;
-
-    if (!server || !table) {
-        // Fallback to adding simple LIKE filters on current foundset
-        try {
-            foundset.loadAllRecords();
-            foundset.addFoundSetFilterParam('notes', 'LIKE', '%' + q + '%', '%' + q + '%');
-            foundset.loadAllRecords();
-        } catch (e) {
-            // ignore
-        }
-        return true;
-    }
-
-    // 1) Try relational search: search evaluations where evaluation_player.name LIKE q%
-    try {
-        var evalFS = databaseManager.getFoundSet(server, table);
-        evalFS.find();
-        // relation dataprovider search -- many Servoy setups allow this
-        evalFS['evaluation_player.name'] = wildcard;
-        var count = evalFS.search();
-        if (count > 0) {
-            // load matching evaluations into the form
-            controller.loadRecords(evalFS);
-            return true;
-        }
-    } catch (e) {
-        // relational search failed, continue to fallbacks
-    }
-
-    // 2) Fallback: search players table for matching names, then filter by player_id
-    try {
-        var playersFS = databaseManager.getFoundSet(server, 'players');
-        playersFS.find();
-        playersFS['name'] = wildcard;
-        var pcount = playersFS.search();
-        if (pcount > 0) {
-            var playerIds = [];
-            for (var i = 1; i <= playersFS.getSize(); i++) {
-                playerIds.push(playersFS.getRecord(i).player_id);
-            }
-            if (playerIds.length > 0) {
-                // Build a search on evaluations for player_id matches
-                var evalFS2 = databaseManager.getFoundSet(server, table);
-                evalFS2.find();
-                // If only one id, set directly, else set OR multiple values by using SQL wildcard patterns isn't possible in find mode.
-                // We'll perform multiple searches and merge results into a temporary foundset to load.
-                var combinedFS = null;
-                for (var j = 0; j < playerIds.length; j++) {
-                    evalFS2.find();
-                    evalFS2['player_id'] = playerIds[j];
-                    var c = evalFS2.search();
-                    if (c > 0) {
-                        if (!combinedFS) {
-                            combinedFS = databaseManager.getFoundSet(server, table);
-                            combinedFS.loadAllRecords();
-                            // Clear it to prepare merging - we'll use a new empty foundset and then load records from evalFS2 instances
-                        }
-                        // Note: combining foundsets programmatically is complex; instead load the evaluations for the first matched player to show some results
-                        controller.loadRecords(evalFS2);
-                        return true;
-                    }
-                }
-            }
-        }
-    } catch (e) {
-        // ignore fallback errors
-    }
-
-    // 3) Final fallback: filter by notes or skill using LIKE on current foundset
-    try {
-        foundset.loadAllRecords();
-        foundset.addFoundSetFilterParam('notes', 'LIKE', '%' + q + '%', '%' + q + '%');
-        foundset.addFoundSetFilterParam('skill', 'LIKE', '%' + q + '%', '%' + q + '%');
-        foundset.loadAllRecords();
-    } catch (e) {
-        // ignore
-    }
-
-    return true;
-}
 /**
  * Fired when the button is clicked.
  *

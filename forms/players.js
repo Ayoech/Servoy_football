@@ -21,7 +21,7 @@ function onAction(event) {
     // save to database
 	  if (answer == 'Yes') {
 	        databaseManager.saveData();
-	   }
+	  }
 
 }
 
@@ -66,6 +66,7 @@ function onCellClick(foundsetindex, columnindex, record, event, columnid) {
  */
 function onAction1(event) {
 	// TODO Auto-generated method stub
+	application.output('add player');
 	var win = application.createWindow('myWin', JSWindow.MODAL_DIALOG);
     win.title = 'Add Player';
     win.setSize(300, 260);

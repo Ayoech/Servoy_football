@@ -8,12 +8,12 @@
  */
 function onClick(event) {
 	// TODO Auto-generated method stub
-	var rec = foundset.getRecord(foundset.newRecord());
+	var rec = foundset.createRecord();
 	var answer = plugins.dialogs.showQuestionDialog(
     'Confirm',
     'Do you want to save the changes?',
     'Yes',
     'No'
     );
-	databaseManager.saveData();
+	if(answer=='Yes') databaseManager.saveData();
 }

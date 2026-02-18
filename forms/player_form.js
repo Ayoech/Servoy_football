@@ -8,8 +8,6 @@
  */
 function onAction(event) {
 	// TODO Auto-generated method stub
-	var rec = foundset.getRecord(foundset.newRecord());
+	var rec = foundset.createRecord();
 	databaseManager.saveData();
-	
-
 }

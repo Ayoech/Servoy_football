@@ -8,7 +8,7 @@
  */
 function onAction(event) {
 	// TODO Auto-generated method stub
-	var rec = foundset.getRecord(foundset.newRecord());
+	var rec = foundset.createRecord();
 
     // optional: set defaults
    
@@ -68,8 +68,11 @@ function onAction1(event) {
 	var win = application.createWindow('myWin', JSWindow.MODAL_DIALOG);
     win.title = 'Add Season';
     win.setSize(300, 220);
-    win.setLocation(600,90)
+    win.setLocation(600,90);
+    var rec = databaseManager.getFoundSet('db:/football_app/seasons');
+    rec.CreateRecord();
     win.show(forms.seasons_form);
+    
 }
 
 /**
