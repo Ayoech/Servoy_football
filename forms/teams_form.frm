@@ -5,6 +5,7 @@
     },
     "dataSource":"db:/football/teams",
     "encapsulation":108,
+    "extendsID":"C5153B22-F8DD-44E0-AB34-8208DDC3CF10",
     "items":[
         {
             "cssPosition":"70,-1,-1,52,80,30",
@@ -71,7 +72,7 @@
                     "top":"220",
                     "width":"80"
                 },
-                "onActionMethodID":"A3280912-A951-4AD7-8039-E57F70E511C1",
+                "onActionMethodID":"39CE916B-34E9-4F1A-873F-D7E2EB03AB31",
                 "styleClass":"btn btn-primary",
                 "text":"Save"
             },

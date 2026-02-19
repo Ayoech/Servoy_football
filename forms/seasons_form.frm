@@ -5,6 +5,7 @@
     },
     "dataSource":"db:/football/seasons",
     "encapsulation":108,
+    "extendsID":"C5153B22-F8DD-44E0-AB34-8208DDC3CF10",
     "items":[
         {
             "cssPosition":"80,-1,-1,80,80,30",
@@ -77,7 +78,7 @@
                     "top":"174",
                     "width":"80"
                 },
-                "onActionMethodID":"405FF0C6-C951-482D-B6EC-F0976229B883",
+                "onActionMethodID":"39CE916B-34E9-4F1A-873F-D7E2EB03AB31",
                 "styleClass":"btn btn-primary",
                 "text":"Save"
             },

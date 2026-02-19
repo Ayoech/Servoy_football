@@ -29,24 +29,7 @@ function onAction(event) {
  *
  * @properties={typeid:24,uuid:"11E6DD4D-165D-4038-BF6F-C7F75C68E6C3"}
  */
-function onClickBtn(event) {
-	// TODO Auto-generated method stub
-	var rec = foundset.createRecord();;
 
-    // optional: set defaults
-   
-	  var answer = plugins.dialogs.showQuestionDialog(
-      'Confirm',
-      'Do you want to save the changes?',
-      'Yes',
-      'No'
-      );
-    // save to database
-	  if (answer == 'Yes') {
-	        databaseManager.saveData();
-	   }
-
-}
 
 /**
  * Called when the selected rows have changed.

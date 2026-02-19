@@ -5,6 +5,7 @@
     },
     "dataSource":"db:/football/evaluations",
     "encapsulation":108,
+    "extendsID":"C5153B22-F8DD-44E0-AB34-8208DDC3CF10",
     "items":[
         {
             "cssPosition":"135,-1,-1,18,140,30",
@@ -55,7 +56,7 @@
                     "top":"220",
                     "width":"80"
                 },
-                "onActionMethodID":"074C9196-64CC-4DBC-9358-B25BB6FD1E7B",
+                "onActionMethodID":"39CE916B-34E9-4F1A-873F-D7E2EB03AB31",
                 "styleClass":"btn btn-primary",
                 "text":"Save"
             },

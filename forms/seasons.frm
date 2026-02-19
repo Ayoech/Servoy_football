@@ -5,6 +5,7 @@
     },
     "dataSource":"db:/football/seasons",
     "encapsulation":108,
+    "extendsID":"C5153B22-F8DD-44E0-AB34-8208DDC3CF10",
     "items":[
         {
             "cssPosition":"181,-1,-1,250,500,167",
@@ -26,7 +27,7 @@
                     },
                     {
                         "headerTitle":"Action",
-                        "id":"id2",
+                        "id":"2",
                         "styleClass":"fa fa-trash",
                         "svyUUID":"CA8DD1C2-AD48-4969-80AC-81BF05A48D9E",
                         "width":100
@@ -40,7 +41,7 @@
                     "top":"181",
                     "width":"500"
                 },
-                "onCellClick":"29FEB853-0E04-4047-AEBF-0527BDE4E892"
+                "onCellClick":"26451D45-0BDB-4B2C-8E62-C8FA91D52EF8"
             },
             "name":"datagrid_1",
             "typeName":"aggrid-groupingtable",

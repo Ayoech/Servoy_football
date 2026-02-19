@@ -38,23 +38,7 @@ function onAction(event) {
  *
  * @properties={typeid:24,uuid:"7DF7217B-0D7F-442A-860F-91044A027CCF"}
  */
-function onCellClick(foundsetindex, columnindex, record, event, columnid) {
-	// TODO Auto-generated method stub
-	if(columnid=='id2'){
-		var answer = plugins.dialogs.showQuestionDialog(
-	    'Confirm delete',
-	    'Delete selected record?',
-	    'Delete',
-	    'Cancel'
-	  );}
-	
 
-	  if (answer == 'Delete') {
-	    foundset.deleteRecord();
-	    databaseManager.saveData();
-	  }
-
-}
 
 /**
  * Fired when the button is clicked.
@@ -69,8 +53,8 @@ function onAction1(event) {
     win.title = 'Add Season';
     win.setSize(300, 220);
     win.setLocation(600,90);
-    var rec = databaseManager.getFoundSet('db:/football_app/seasons');
-    rec.CreateRecord();
+    //var rec = databaseManager.getFoundSet('db:/football_app/seasons');
+    //rec.createRecord();
     win.show(forms.seasons_form);
     
 }
@@ -88,22 +72,3 @@ function onAction1(event) {
  *
  * @properties={typeid:24,uuid:"29FEB853-0E04-4047-AEBF-0527BDE4E892"}
  */
-function onDelete(foundsetindex, columnindex, record, event, dataTarget) {
-	// TODO Auto-generated method stub
-	if(columnindex==2){
-		var answer = plugins.dialogs.showQuestionDialog(
-	    'Confirm delete',
-	    'Delete selected record?',
-	    'Delete',
-	    'Cancel'
-	  );}
-	  
-	
-
-	  if (answer == 'Delete') {
-	    foundset.deleteRecord();
-	    databaseManager.saveData();
-	  }
-
-
-}

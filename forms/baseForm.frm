@@ -1,0 +1,11 @@
+{
+    "customProperties":{
+        "formComponent":false
+    },
+    "encapsulation":108,
+    "name":"baseForm",
+    "navigatorID":"-1",
+    "showInMenu":true,
+    "typeid":3,
+    "uuid":"C5153B22-F8DD-44E0-AB34-8208DDC3CF10"
+}
