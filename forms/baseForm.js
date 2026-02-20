@@ -1,8 +1,9 @@
+
 /**
  * TODO generated, please specify type and doc for the params
  * @param event
  *
- * @properties={typeid:24,uuid:"39CE916B-34E9-4F1A-873F-D7E2EB03AB31"}
+ * @properties={typeid:24,uuid:"267D490A-C50E-412D-81DF-39BBAFE49743"}
  */
 function onClickSave(event) {
 	// TODO Auto-generated method stub
@@ -23,37 +24,27 @@ function onClickSave(event) {
 	   }
 
 }
+
 /**
- * TODO generated, please specify type and doc for the params
- * @param foundsetindex
- * @param columnindex
- * @param record
- * @param event
- * @param columnid
- *
- * @properties={typeid:24,uuid:"26451D45-0BDB-4B2C-8E62-C8FA91D52EF8"}
+ * @properties={typeid:24,uuid:"B6D42BB4-10CC-46AC-965A-D395019DEC30"}
  */
-function onDelete(foundsetindex, columnindex, record, event, columnid) {
+ 
+
+/**
+ * @properties={typeid:24,uuid:"76C1C579-58F3-4F91-A826-4FE4A3C4065C"}
+ */
+function onCellClick(foundsetindex, columnindex, record, event, columnId) {
+	if (columnId == 'trash') {
+		application.output('Fired');
+		var answer = plugins.dialogs.showQuestionDialog('Confirm delete',
+			'Delete selected record?',
+			'Delete',
+			'Cancel');
+		if (answer == 'Delete') {
+			foundset.deleteRecord();
+			databaseManager.saveData();
+		}
+	}
 	// TODO Auto-generated method stub
-	application.output('Deleting record...');
-	//application.output(columnid);
-	//application.output(columnindex);
-	//application.output('record' + record+ ' foundsetindex' + foundsetindex);
-	application.output(String(this).slice(10,17));
-	if( String(this).slice(10,17).includes('seasons') && columnindex==2){
-		application.output('right column selected..');
-		var answer = plugins.dialogs.showQuestionDialog(
-			
-	    'Confirm delete',
-	    'Delete selected record?',
-	    'Delete',
-	    'Cancel'
-	  );}
-	
-
-	  if (answer == 'Delete') {
-	    foundset.deleteRecord();
-	    databaseManager.saveData();
-	  }
-
 }
+

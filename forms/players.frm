@@ -5,6 +5,7 @@
     },
     "dataSource":"db:/football/players",
     "encapsulation":108,
+    "extendsID":"C5153B22-F8DD-44E0-AB34-8208DDC3CF10",
     "items":[
         {
             "cssPosition":"20,-1,-1,12,80,30",
@@ -67,7 +68,7 @@
                     {
                         "autoResize":true,
                         "headerText":"Action",
-                        "id":"id4",
+                        "id":"trash",
                         "styleClass":"fa fa-trash",
                         "svyUUID":"C9F0141E-3D7D-49E7-BD9F-BF06CA7D9941",
                         "width":"80"
@@ -81,7 +82,8 @@
                     "top":"66",
                     "width":"450"
                 },
-                "onCellClick":"35927E76-5885-47AA-9C83-9DF98FEBB1C1"
+                "onCellClick":"76C1C579-58F3-4F91-A826-4FE4A3C4065C",
+                "onHeaderClick":null
             },
             "name":"table_2",
             "typeName":"servoyextra-table",

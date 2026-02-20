@@ -5,6 +5,7 @@
     },
     "dataSource":"db:/football/teams",
     "encapsulation":108,
+    "extendsID":"C5153B22-F8DD-44E0-AB34-8208DDC3CF10",
     "items":[
         {
             "cssPosition":"286,-1,-1,38,70,28",
@@ -80,11 +81,7 @@
         {
             "cssPosition":"319,-1,-1,33,930,181",
             "customProperties":{
-                "methods":{
-                    "onCellClick":{
-                        "arguments":[]
-                    }
-                }
+                
             },
             "json":{
                 "columns":[
@@ -110,7 +107,7 @@
                     },
                     {
                         "headerText":"Action",
-                        "id":"id3",
+                        "id":"trash",
                         "showAs":"sanitizedHtml",
                         "styleClass":"fa fa-trash",
                         "svyUUID":"C7DCEDE3-9753-41DD-922D-27AC02856947",
@@ -125,7 +122,7 @@
                     "top":"319",
                     "width":"930"
                 },
-                "onCellClick":"1BC155DE-BB56-4702-A41F-8640A5FCE932",
+                "onCellClick":"76C1C579-58F3-4F91-A826-4FE4A3C4065C",
                 "sortdownClass":"table-servoyextra-sort-down"
             },
             "name":"table_2",

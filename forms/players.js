@@ -6,24 +6,8 @@
  *
  * @properties={typeid:24,uuid:"35BFE733-7546-4F65-9050-28339DEEB56F"}
  */
-function onAction(event) {
-	// TODO Auto-generated method stub
-	var rec = foundset.getRecord(foundset.newRecord());
 
-    // optional: set defaults
-   
-	  var answer = plugins.dialogs.showQuestionDialog(
-      'Confirm',
-      'Do you want to save the changes?',
-      'Yes',
-      'No'
-      );
-    // save to database
-	  if (answer == 'Yes') {
-	        databaseManager.saveData();
-	  }
 
-}
 
 /**
  * Called when the mouse is clicked on a row/cell (foundset and column indexes are given) or when the ENTER key is used (then only the selected foundset index is given).
@@ -38,24 +22,7 @@ function onAction(event) {
  * @properties={typeid:24,uuid:"35927E76-5885-47AA-9C83-9DF98FEBB1C1"}
  * @AllowToRunInFind
  */
-function onCellClick(foundsetindex, columnindex, record, event, columnid) {
-	// TODO Auto-generated method stub
-	if(columnid=='id4'){
-		var answer = plugins.dialogs.showQuestionDialog(
-	    'Confirm delete',
-	    'Delete selected record?',
-	    'Delete',
-	    'Cancel'
-	  );}
-	 
-	
 
-	  if (answer == 'Delete') {
-	    foundset.deleteRecord();
-	    databaseManager.saveData();
-	  }
-
-}
 
 /**
  * Fired when the button is clicked.
@@ -74,3 +41,42 @@ function onAction1(event) {
     win.show(forms.player_form);
 
 }
+
+/**
+ * @param {Number} columnindex
+ * @param {String} sortdirection
+ * @param {JSEvent} [event]
+ * @param {String} [columnid]
+ *
+ * @return {String}
+ *
+ * @properties={typeid:24,uuid:"AEF791BC-3FD2-4659-BAB1-721F601F3933"}
+ */
+
+
+/**
+ * Called when the mouse is clicked on a row/cell (foundset and column indexes are given) or when the ENTER key is used (then only the selected foundset index is given).
+ * Use the record to exactly match what the user clicked on.
+ *
+ * @param {Number} foundsetindex
+ * @param {Number} [columnindex]
+ * @param {JSRecord} [record]
+ * @param {JSEvent} [event]
+ * @param {String} [columnid]
+ *
+ * @properties={typeid:24,uuid:"AFB91E8D-4DB3-4DAD-AEC4-7BADEE727268"}
+ */
+
+/**
+ * Called when the mouse is clicked on a row/cell (foundset and column indexes are given) or when the ENTER key is used (then only the selected foundset index is given).
+ * Use the record to exactly match what the user clicked on.
+ *
+ * @param {Number} foundsetindex
+ * @param {Number} [columnindex]
+ * @param {JSRecord} [record]
+ * @param {JSEvent} [event]
+ * @param {String} [columnid]
+ *
+ * @properties={typeid:24,uuid:"6A4C0BC4-71F0-4FFE-BE40-78C7E00A7DE6"}
+ */
+

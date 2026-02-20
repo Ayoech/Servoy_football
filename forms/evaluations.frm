@@ -5,6 +5,7 @@
     },
     "dataSource":"db:/football/evaluations",
     "encapsulation":108,
+    "extendsID":"C5153B22-F8DD-44E0-AB34-8208DDC3CF10",
     "items":[
         {
             "cssPosition":"120,-1,-1,60,850,279",
@@ -51,7 +52,7 @@
                     {
                         "editType":"TEXTFIELD",
                         "headerTitle":"Action",
-                        "id":"id4",
+                        "id":"trash",
                         "styleClass":"fa fa-trash",
                         "svyUUID":"40DCC0AC-F0B9-40DE-8A11-BFDE5DA5E861",
                         "valuelistConfig":{
@@ -68,7 +69,7 @@
                     "top":"120",
                     "width":"850"
                 },
-                "onCellClick":"DD1D5CC5-7E5B-4B4F-86B3-B30453BBA6CC"
+                "onCellClick":"76C1C579-58F3-4F91-A826-4FE4A3C4065C"
             },
             "name":"datagrid_1",
             "typeName":"aggrid-groupingtable",

@@ -27,7 +27,7 @@
                     },
                     {
                         "headerTitle":"Action",
-                        "id":"2",
+                        "id":"trash",
                         "styleClass":"fa fa-trash",
                         "svyUUID":"CA8DD1C2-AD48-4969-80AC-81BF05A48D9E",
                         "width":100
@@ -41,7 +41,7 @@
                     "top":"181",
                     "width":"500"
                 },
-                "onCellClick":"26451D45-0BDB-4B2C-8E62-C8FA91D52EF8"
+                "onCellClick":"76C1C579-58F3-4F91-A826-4FE4A3C4065C"
             },
             "name":"datagrid_1",
             "typeName":"aggrid-groupingtable",
