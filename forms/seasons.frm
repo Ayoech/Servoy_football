@@ -26,6 +26,7 @@
                         "svyUUID":"50B264A3-606A-4F8D-9C0B-7E4FE76F0CE7"
                     },
                     {
+                        "dndSource":true,
                         "headerTitle":"Action",
                         "id":"trash",
                         "styleClass":"fa fa-trash",
@@ -41,7 +42,7 @@
                     "top":"181",
                     "width":"500"
                 },
-                "onCellClick":"76C1C579-58F3-4F91-A826-4FE4A3C4065C"
+                "onCellClick":"F1DA471D-C190-444B-9A64-3CBF7E9BC125"
             },
             "name":"datagrid_1",
             "typeName":"aggrid-groupingtable",

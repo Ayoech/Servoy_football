@@ -1,6 +1,12 @@
 {
     "customProperties":{
         "formComponent":false,
+        "methods":{
+            "onShowMethodID":{
+                "arguments":null,
+                "parameters":null
+            }
+        },
         "useCssPosition":true
     },
     "dataSource":"db:/football/evaluations",
@@ -32,6 +38,7 @@
                     },
                     {
                         "dataprovider":"notes",
+                        "dndSource":true,
                         "editType":"TEXTFIELD",
                         "filterType":"TEXT",
                         "id":"notes",
@@ -69,12 +76,32 @@
                     "top":"120",
                     "width":"850"
                 },
-                "onCellClick":"76C1C579-58F3-4F91-A826-4FE4A3C4065C"
+                "onCellClick":"6AD35E0C-D49D-4E15-B553-CD9ED81473F9"
             },
             "name":"datagrid_1",
             "typeName":"aggrid-groupingtable",
             "typeid":47,
             "uuid":"C6587E04-39BD-44BB-A2C8-70520DF89C65"
+        },
+        {
+            "cssPosition":"7,-1,-1,310,300,40",
+            "json":{
+                "cssPosition":{
+                    "bottom":"-1",
+                    "height":"40",
+                    "left":"310",
+                    "right":"-1",
+                    "top":"7",
+                    "width":"300"
+                },
+                "dataProvider":"searchText",
+                "onAction":"1943C215-0B04-4EA1-A88E-536D0BE67010",
+                "placeholderText":"Search"
+            },
+            "name":"inputgroup_2",
+            "typeName":"bootstrapextracomponents-input-group",
+            "typeid":47,
+            "uuid":"C735414A-EF5F-4C9B-9769-C92C779694AF"
         },
         {
             "cssPosition":"60,-1,-1,68,64,30",
@@ -106,6 +133,7 @@
     ],
     "name":"evaluations",
     "navigatorID":"-1",
+    "onShowMethodID":"75AF2B77-8D9D-4477-87A4-EF6760554487",
     "showInMenu":true,
     "typeid":3,
     "uuid":"1C1D59A8-3F22-4DF7-B901-6A87ADB9D55F"

@@ -72,3 +72,32 @@ function onAction1(event) {
  *
  * @properties={typeid:24,uuid:"29FEB853-0E04-4047-AEBF-0527BDE4E892"}
  */
+
+ /**
+ * @param foundsetindex
+ * @param columnindex
+ * @param record
+ * @param event
+ * @param columnId
+ * @override
+ *
+ * @properties={typeid:24,uuid:"F1DA471D-C190-444B-9A64-3CBF7E9BC125"}
+ */
+function onCellClick(foundsetindex, columnindex, record, event, columnId) {
+	
+		// TODO Auto-generated method stub
+		if(columnindex == 2){
+			var answer = plugins.dialogs.showQuestionDialog('Confirm delete',
+				'Delete selected record?',
+				'Delete',
+				'Cancel');
+			if (answer == 'Delete') {
+				foundset.deleteRecord();
+				databaseManager.saveData();
+			}
+		}
+
+	}
+
+
+ 

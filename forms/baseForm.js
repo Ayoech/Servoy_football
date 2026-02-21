@@ -8,6 +8,13 @@
 function onClickSave(event) {
 	// TODO Auto-generated method stub
 	application.output('Saving data...');
+	application.output(controller.getName());
+	if(foundset.skill>100){
+		application.output('Skill cannot be greater than 100');
+		plugins.dialogs.showErrorDialog('Validation error', 'Skill cannot be greater than 100', 'OK');
+		databaseManager.revertEditedRecords();
+        return;
+	}
 	var rec = foundset.createRecord();
 
     // optional: set defaults
