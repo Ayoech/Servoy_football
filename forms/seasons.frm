@@ -13,6 +13,7 @@
                 "columns":[
                     {
                         "dataprovider":"name",
+                        "editType":"TEXTFIELD",
                         "filterType":"TEXT",
                         "id":"name",
                         "styleClassDataprovider":null,
@@ -20,6 +21,7 @@
                     },
                     {
                         "dataprovider":"year",
+                        "editType":"TYPEAHEAD",
                         "filterType":"NUMBER",
                         "id":"year",
                         "styleClassDataprovider":null,
@@ -42,7 +44,8 @@
                     "top":"181",
                     "width":"500"
                 },
-                "onCellClick":"F1DA471D-C190-444B-9A64-3CBF7E9BC125"
+                "onCellClick":"F1DA471D-C190-444B-9A64-3CBF7E9BC125",
+                "onCellEditingStopped":"57ED592A-71BF-4B2A-B55A-85EEABF5C604"
             },
             "name":"datagrid_1",
             "typeName":"aggrid-groupingtable",

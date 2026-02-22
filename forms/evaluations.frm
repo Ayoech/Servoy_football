@@ -76,7 +76,8 @@
                     "top":"120",
                     "width":"850"
                 },
-                "onCellClick":"6AD35E0C-D49D-4E15-B553-CD9ED81473F9"
+                "onCellClick":"6AD35E0C-D49D-4E15-B553-CD9ED81473F9",
+                "onCellEditingStopped":"72A0760D-56AF-49D9-80CC-DA341797C65C"
             },
             "name":"datagrid_1",
             "typeName":"aggrid-groupingtable",

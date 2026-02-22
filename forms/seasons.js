@@ -101,3 +101,36 @@ function onCellClick(foundsetindex, columnindex, record, event, columnId) {
 
 
  
+ /**
+ * Called when cell editing stopped.
+ *
+ * @param {Number} foundsetindex
+ * @param {Number} [columnindex]
+ * @param [oldvalue]
+ * @param [newvalue]
+ * @param {JSEvent} [event]
+ * @param {JSRecord} [record]
+ *
+ * @properties={typeid:24,uuid:"57ED592A-71BF-4B2A-B55A-85EEABF5C604"}
+ */
+function onCellEditingStopped(foundsetindex, columnindex, oldvalue, newvalue, event, record) {
+	// TODO Auto-generated method stub
+	application.output(newvalue.displayValue);
+	const year = new Date().getFullYear();
+	application.output('Current year: '+ year );
+	if(!parseInt(newvalue.displayValue) || newvalue.displayValue < 0){
+		plugins.dialogs.showErrorDialog('Validation error', 'Value must be a non-negative number', 'OK');
+		foundset.revertEditedRecords();
+	}
+	else if(newvalue.realValue > year){
+		plugins.dialogs.showErrorDialog('Validation error', 'Year cannot be greater than current year', 'OK');
+		application.output('old value: '+ oldvalue);
+		foundset.getRecord(foundsetindex).year = oldvalue;
+		application.output('reverted value: '+ foundset.getRecord(foundsetindex).year);
+		//foundset.revertEditedRecords();
+	}
+	
+	
+
+}
+ 

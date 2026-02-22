@@ -48,6 +48,8 @@ var searchText = null;
  */
 function onClick(event) {
 	// TODO Auto-generated method stub
+	foundset.revertEditedRecords();
+	foundset.newRecord();
 	var win = application.createWindow('myWin', JSWindow.MODAL_DIALOG);
     win.title = 'Add Evaluation';
     win.setSize(380, 280);
@@ -287,9 +289,34 @@ function onChangeInput(oldValue, newValue, event) {
 function onAction(event) {
 	// TODO Auto-generated method stub
 	application.output('searching for: ' + searchText);
-	if(foundset.find()) { 
-		foundset.evaluation_player.name = searchText;
+	if(searchText && foundset.find()) { 
+		foundset.evaluation_player.name = '%' + searchText + '%';
 		foundset.search();
 		
 	}
+	else{
+        foundset.loadAllRecords();
+    }
+}
+
+/**
+ * Called when cell editing stopped.
+ *
+ * @param {Number} foundsetindex
+ * @param {Number} [columnindex]
+ * @param [oldvalue]
+ * @param [newvalue]
+ * @param {JSEvent} [event]
+ * @param {JSRecord} [record]
+ *
+ * @properties={typeid:24,uuid:"72A0760D-56AF-49D9-80CC-DA341797C65C"}
+ */
+function onCellEditingStopped(foundsetindex, columnindex, oldvalue, newvalue, event, record) {
+	// TODO Auto-generated method stub
+	application.output(newvalue);
+	if(newvalue > 100){
+		plugins.dialogs.showErrorDialog('Validation error', 'Skill cannot be greater than 100', 'OK');
+		foundset.revertEditedRecords();
+	}
+
 }
