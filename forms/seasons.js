@@ -127,7 +127,7 @@ function onCellEditingStopped(foundsetindex, columnindex, oldvalue, newvalue, ev
 		application.output('old value: '+ oldvalue);
 		foundset.getRecord(foundsetindex).year = oldvalue;
 		application.output('reverted value: '+ foundset.getRecord(foundsetindex).year);
-		//foundset.revertEditedRecords();
+	
 	}
 	
 	
