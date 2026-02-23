@@ -40,14 +40,12 @@ function onClick(event) {
 function onTrashIconClick(foundsetindex, columnindex, record, event, dataTarget) {
 	// TODO Auto-generated method stub
 	if (columnindex == 4) {
-		var answer = plugins.dialogs.showQuestionDialog('Confirm delete',
-			'Delete selected record?',
-			'Delete',
-			'Cancel');
-		if (answer == 'Delete') {
-			foundset.deleteRecord();
-			databaseManager.saveData();
-		}
+		var answer = scopes.dialog.deleteRecord();
+		if (answer) {
+            foundset.deleteRecord();
+            databaseManager.saveData();
+        }
+     
 	}
 
 }

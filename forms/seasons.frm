@@ -30,7 +30,7 @@
                     {
                         "dndSource":true,
                         "headerTitle":"Action",
-                        "id":"trash",
+                        "id":"2",
                         "styleClass":"fa fa-trash",
                         "svyUUID":"CA8DD1C2-AD48-4969-80AC-81BF05A48D9E",
                         "width":100

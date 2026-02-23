@@ -122,7 +122,7 @@
                     "top":"319",
                     "width":"930"
                 },
-                "onCellClick":"76C1C579-58F3-4F91-A826-4FE4A3C4065C",
+                "onCellClick":"9D4A7878-9713-4C1C-9C05-B2C1C06D3AA8",
                 "sortdownClass":"table-servoyextra-sort-down"
             },
             "name":"table_2",

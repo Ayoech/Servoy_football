@@ -37,26 +37,7 @@ function onClickSave(event) {
 
 }
 
-/**
- * @properties={typeid:24,uuid:"B6D42BB4-10CC-46AC-965A-D395019DEC30"}
- */
  
 
-/**
- * @properties={typeid:24,uuid:"76C1C579-58F3-4F91-A826-4FE4A3C4065C"}
- */
-function onCellClick(foundsetindex, columnindex, record, event, columnId) {
-	if (columnId == 'trash') {
-		application.output('Fired');
-		var answer = plugins.dialogs.showQuestionDialog('Confirm delete',
-			'Delete selected record?',
-			'Delete',
-			'Cancel');
-		if (answer == 'Delete') {
-			foundset.deleteRecord();
-			databaseManager.saveData();
-		}
-	}
-	// TODO Auto-generated method stub
-}
+
 
