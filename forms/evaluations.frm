@@ -134,7 +134,7 @@
     ],
     "name":"evaluations",
     "navigatorID":"-1",
-    "onShowMethodID":"75AF2B77-8D9D-4477-87A4-EF6760554487",
+    "onShowMethodID":"-1",
     "showInMenu":true,
     "typeid":3,
     "uuid":"1C1D59A8-3F22-4DF7-B901-6A87ADB9D55F"

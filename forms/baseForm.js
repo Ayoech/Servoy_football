@@ -36,7 +36,27 @@ function onClickSave(event) {
 	   }
 
 }
+/**
+ * TODO generated, please specify type and doc for the params
+ * @param foundsetindex
+ * @param columnindex
+ * @param record
+ * @param event
+ * @param columnid
+ *
+ * @properties={typeid:24,uuid:"6ADE51C7-6793-42A2-8C9C-DB420BFCF19A"}
+ */
+function onCellClick(foundsetindex, columnindex, record, event, columnid) {
+	// TODO Auto-generated method stub
+	if(columnid == 'trash'){
+		var answer = scopes.dialog.deleteRecord();
+		if(answer){
+			foundset.deleteRecord(record);
+			databaseManager.saveData();
+		}
+	}
 
+}
  
 
 
