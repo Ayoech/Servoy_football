@@ -1,6 +1,16 @@
 {
     "customProperties":{
         "formComponent":false,
+        "methods":{
+            "onLoadMethodID":{
+                "arguments":null,
+                "parameters":null
+            },
+            "onShowMethodID":{
+                "arguments":null,
+                "parameters":null
+            }
+        },
         "useCssPosition":true
     },
     "dataSource":"db:/football/teams",
@@ -27,6 +37,25 @@
             "typeName":"bootstrapcomponents-button",
             "typeid":47,
             "uuid":"28C31261-F6BF-4185-8C11-CFFB5655C967"
+        },
+        {
+            "cssPosition":"330,-1,-1,676,268,147",
+            "json":{
+                "cssPosition":{
+                    "bottom":"-1",
+                    "height":"147",
+                    "left":"676",
+                    "right":"-1",
+                    "top":"330",
+                    "width":"268"
+                },
+                "onChartDrawn":null,
+                "onClick":null
+            },
+            "name":"chart_1",
+            "typeName":"svychartjs-chart",
+            "typeid":47,
+            "uuid":"2AD2C18D-B21E-47FC-8055-75E6584E5A24"
         },
         {
             "height":480,
@@ -79,7 +108,7 @@
             "uuid":"6378EE78-B1A1-45E4-8F86-88D4175BC9BB"
         },
         {
-            "cssPosition":"319,-1,-1,33,930,181",
+            "cssPosition":"319,-1,-1,33,607,181",
             "customProperties":{
                 
             },
@@ -120,7 +149,7 @@
                     "left":"33",
                     "right":"-1",
                     "top":"319",
-                    "width":"930"
+                    "width":"607"
                 },
                 "onCellClick":"6ADE51C7-6793-42A2-8C9C-DB420BFCF19A",
                 "sortdownClass":"table-servoyextra-sort-down"
@@ -133,7 +162,8 @@
     ],
     "name":"teams",
     "navigatorID":"-1",
-    "onShowMethodID":"AABBCCDD-1122-3344-5566-77889900AABB",
+    "onLoadMethodID":"D3CB166E-F15A-4700-BB26-FE6A6A1EDC45",
+    "onShowMethodID":"-1",
     "showInMenu":true,
     "styleClass":"body",
     "typeid":3,

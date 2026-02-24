@@ -57,6 +57,7 @@ function onCellClick(foundsetindex, columnindex, record, event, columnid) {
 	}
 
 }
+
  
 
 

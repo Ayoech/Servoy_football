@@ -125,3 +125,38 @@ function onAction1(event) {
     win.setLocation(600,90)
     win.show(forms.teams_form);
 }
+/**
+ * @properties={typeid:24,uuid:"D3CB166E-F15A-4700-BB26-FE6A6A1EDC45"}
+ */
+function chart_data() {
+	var q = datasources.db.football.teams.createSelect();
+	q.result.add(q.columns.rank);
+	q.result.add(q.columns.team_name.count);
+	q.groupBy.add(q.columns.rank);
+	var sqlString = q.getSQL();
+	var dataset = databaseManager.getDataSetByQuery(q, 11);
+	application.output(dataset);
+	application.output("Generated SQL: " + sqlString);
+	var labels = [];
+	var data1 = [];
+
+	for (var i = 1; i <= dataset.getMaxRowIndex(); i++) {
+	    labels.push("Rating " + dataset.getValue(i, 1)); // rank column
+	    data1.push(dataset.getValue(i, 2));             // count column
+	}
+	application.output(labels);
+	application.output(data1);
+	
+	
+	var plt_data = {
+		type: 'pie',
+		data: {
+			labels: labels,
+		datasets: [{
+			data: data1,
+			}]
+		}
+	}
+	elements.chart_1.setData(plt_data);
+}
+
