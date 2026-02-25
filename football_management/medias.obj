@@ -1,0 +1,37 @@
+[
+{
+    "encapsulation":0,
+    "mimeType":"text/css",
+    "name":"football_management.less",
+    "typeid":37,
+    "uuid":"54D44E7A-09B8-4CA0-BBF8-A959AD1B11F3"
+},
+{
+    "encapsulation":0,
+    "mimeType":"text/css",
+    "name":"manifest.json",
+    "typeid":37,
+    "uuid":"3F99B536-9055-4FD8-9981-DCD98FEF6A91"
+},
+{
+    "encapsulation":0,
+    "mimeType":"text/css",
+    "name":"solution_properties.less",
+    "typeid":37,
+    "uuid":"2932014F-F886-47CE-B5ED-B588B7E250BD"
+},
+{
+    "encapsulation":0,
+    "mimeType":"text/css",
+    "name":"variants.json",
+    "typeid":37,
+    "uuid":"F49D73FF-6C4E-4F5C-8DDF-B12BBDB8BF9A"
+},
+{
+    "encapsulation":0,
+    "mimeType":"text/css",
+    "name":"webapp144.png",
+    "typeid":37,
+    "uuid":"7EB4A513-4B9A-40CD-857C-D0F17FFB1F4C"
+}
+]

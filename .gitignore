@@ -1,0 +1,17 @@
+# Servoy / Eclipse workspace
+.metadata/
+
+# Build folders
+bin/
+build/
+target/
+
+# Node
+node_modules/
+
+# Logs
+*.log
+
+# OS
+Thumbs.db
+.DS_Store
