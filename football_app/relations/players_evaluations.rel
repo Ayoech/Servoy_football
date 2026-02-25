@@ -1,0 +1,17 @@
+{
+    "allowCreationRelatedRecords":true,
+    "foreignDataSource":"db:/football/evaluations",
+    "items":[
+        {
+            "foreignColumnName":"player_id",
+            "primaryDataProviderID":"player_uuid",
+            "typeid":23,
+            "uuid":"65880BA2-C9CE-4D2F-B4F0-B923D1DDA06D"
+        }
+    ],
+    "joinType":1,
+    "name":"players_evaluations",
+    "primaryDataSource":"db:/football/players",
+    "typeid":22,
+    "uuid":"B74A1847-B032-4E83-9316-C0486D636169"
+}

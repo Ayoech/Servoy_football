@@ -1,0 +1,17 @@
+{
+    "allowCreationRelatedRecords":true,
+    "foreignDataSource":"db:/football/teams",
+    "items":[
+        {
+            "foreignColumnName":"team_uuid",
+            "primaryDataProviderID":"team_id",
+            "typeid":23,
+            "uuid":"65D77023-6302-4140-8647-ECA190188783"
+        }
+    ],
+    "joinType":1,
+    "name":"players_to_teams",
+    "primaryDataSource":"db:/football/players",
+    "typeid":22,
+    "uuid":"8E4F5A16-A7C9-425A-8129-6C7823FDCB73"
+}

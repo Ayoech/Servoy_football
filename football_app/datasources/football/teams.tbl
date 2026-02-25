@@ -1,0 +1,21 @@
+{
+    "dataSource":"db:/football/teams",
+    "items":[
+        {
+            "aggregateQuantifier":1,
+            "dataProviderIDToAggregate":"rank",
+            "name":"count",
+            "typeid":40,
+            "uuid":"2A5358A8-B664-4F39-B5B5-22C5D306B633"
+        },
+        {
+            "dataProviderIDToAggregate":"rank",
+            "name":"number",
+            "type":4,
+            "typeid":40,
+            "uuid":"FFC06DA2-9D8A-478B-A668-C709CF16CA69"
+        }
+    ],
+    "typeid":39,
+    "uuid":"820D51A9-1F30-4F01-858C-29152FC17A94"
+}
